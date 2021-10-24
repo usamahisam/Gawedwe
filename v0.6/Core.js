@@ -292,7 +292,7 @@ export class Component extends DOMCycle {
 	}
 }
 
-class GaweAppSekoUshamaMustikohisam extends View {
+class GaweApp extends View {
 	constructor(){
 		super();
 		this.listActivities = {};
@@ -397,4 +397,4 @@ class GaweAppSekoUshamaMustikohisam extends View {
 	}
 }
 
-export var App = new GaweAppSekoUshamaMustikohisam();
+export var App = new GaweApp();
