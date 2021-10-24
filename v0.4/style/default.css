@@ -1,0 +1,160 @@
+:root {
+	--animate-translate-y-md: translateY(5%);
+}
+
+@-webkit-keyframes slide-md-open{
+	100%{
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+		opacity: 1;
+	}
+	0%{
+		-webkit-transform: var(--animate-translate-y-md);
+		transform: var(--animate-translate-y-md);
+		opacity: .0;
+	}
+}
+@keyframes slide-md-open{
+	100%{
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+		opacity: 1;
+	}
+	0%{
+		-webkit-transform: var(--animate-translate-y-md);
+		transform: var(--animate-translate-y-md);
+		opacity: .0;
+	}
+}
+
+@-webkit-keyframes slide-md-close{
+	100%{
+		-webkit-transform:var(--animate-translate-y-md);
+		transform:var(--animate-translate-y-md);
+		opacity: .0;
+	}
+	0%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes slide-md-close{
+	100%{
+		-webkit-transform:var(--animate-translate-y-md);
+		transform:var(--animate-translate-y-md);
+		opacity: .0;
+	}
+	0%{
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.slide-md-open{
+	-webkit-animation:slide-md-open .2s linear;
+	animation:slide-md-open .2s linear;
+}
+.slide-md-close{
+	-webkit-animation: slide-md-close .25s linear;
+	animation: slide-md-close .25s linear;
+}
+
+
+/* CONTENT */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Tahoma';
+	text-rendering: optimizeLegibility;
+	touch-action: manipulation;
+}
+
+h1 {
+	margin: 0px;
+}
+
+app-root {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+	overflow: hidden;
+}
+
+app-fakestack {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+app-main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+}
+
+page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	z-index: var(--index-page);
+	box-shadow: 0px 0px 100px 10px #000;
+    image-rendering: pixelated;
+	text-rendering: optimizeLegibility;
+	touch-action: manipulation;
+}
+
+header {
+	background-color:#FFF;
+	box-shadow:0px 2px 2px 0px #ddd;
+	padding:15px 10px 15px 10px;
+	font-size:20px;
+}
+
+header title {
+	margin-left:10px;
+	font-weight:bold;
+	display: block;
+}
+
+content {
+	padding-top: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	overflow-x: none;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	height:100%;
+}

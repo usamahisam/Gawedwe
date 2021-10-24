@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="manifest" href="manifest.json">
+<title>Desktop GaweDwe v.0.7.0</title>
+<meta name="description" content="Aplikasi iki gawe dwe">
+<style>
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+svg { overflow: hidden; }
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #999;
+	padding: 0px 2px 0px 2px;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #999;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #555;
+	padding: 0px 2px 0px 2px;
+}
+@font-face {
+	font-family: 'GG';
+	src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'Amiri';
+	src: url('./assets/fonts/Amiri/Amiri-Regular.ttf');
+}
+@font-face {
+	font-family: 'Amiri Bold';
+	src: url('./assets/fonts/Amiri/Amiri-Bold.ttf');
+}
+</style>
+</head>
+<body style="font-family:'GG';margin:0px;text-rendering:optimizeLegibility;display:flex;min-height:100vh;flex-direction:column;overflow:hidden;background-color:#fff;">
+<canvas id="_glcanvas_" width="0" height="0"></canvas>
+<main style="flex:1;"></main>
+<script src="./App.js" type="module"></script>
+</body>
+</html>

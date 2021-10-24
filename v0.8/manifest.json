@@ -1,0 +1,26 @@
+{
+  "short_name": "GaweDwe",
+  "name": "Aplikasi iki gawe dwe",
+  "icons": [
+    {
+      "src": "assets/icon/ic_launcher_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/icon/ic_launcher_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/icon/ic_launcher_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "display": "standalone",
+  "theme_color": "#2196F3",
+  "background_color": "#2196F3",
+  "orientation": "landscape"
+}
